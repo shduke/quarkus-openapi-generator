@@ -97,6 +97,7 @@ public class ApicurioOpenApiServerCodegen implements CodeGenProvider {
     }
 
     private static void validateOpenApiDir(CodeGenContext context, Path openApiDir) throws CodeGenException {
+        log.info("contextDir {}, openApiDir {}", context.inputDir().toAbsolutePath(), openApiDir.toAbsolutePath());
         if (!Files.exists(openApiDir)) {
             throw new CodeGenException(
                     "The OpenAPI input base directory does not exist. Please create the directory at " + context.inputDir());
