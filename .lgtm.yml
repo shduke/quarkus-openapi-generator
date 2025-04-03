@@ -6,6 +6,6 @@ extraction:
   java:
     index:
       maven:
-        version: "3.8.4"
+        version: "3.6.3"
       # Specify the Java version required to build the project
       java_version: "17"
